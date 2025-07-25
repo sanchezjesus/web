@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - DYSTOPIA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="imagenes/logodystopia.png" alt="Logo DYSTOPIA" class="logo-dystopia">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn active">Menú <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="menu.html" class="active">Menú</a>
+                        <a href="menu-delivery.html">Menú Delivery</a>
+                    </div>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section class="menu" style="padding-top: 7rem; padding-bottom: 3rem;">
+  <div class="menu-tabs" style="display:flex;justify-content:center;gap:1.2rem;margin-bottom:2.5rem;flex-wrap:wrap;">
+    <button class="tab-btn active" data-tab="entradas">Entradas</button>
+    <button class="tab-btn" data-tab="ensaladas">Ensaladas</button>
+    <button class="tab-btn" data-tab="hamburguesas">Hamburguesas</button>
+    <button class="tab-btn" data-tab="compartir">Para Compartir</button>
+    <button class="tab-btn" data-tab="pizzas">Pizzas</button>
+    <button class="tab-btn" data-tab="postres">Postres</button>
+    <button class="tab-btn" data-tab="bebidas">Bebidas</button>
+  </div>
+  <div class="menu-section active" id="entradas">
+    <div class="menu-grid">
+      <div class="menu-card"><div class="menu-image-placeholder">Tequeños</div><h4>TEQUEÑOS</h4><p>5 unidades</p><span class="price" style="color:var(--amarillo)">6.49 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Empanaditas</div><h4>EMPANADITAS</h4><p>6 unidades (carne o papa con queso)</p><span class="price" style="color:var(--amarillo)">6.49 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Alitas</div><h4>ALITAS</h4><p>5 unidades con salsa BBQ o BBQ picante</p><span class="price" style="color:var(--amarillo)">9.49 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Chicken Tenders</div><h4>CHICKEN TENDERS</h4><p>200g de pollo crispy + 150g de papas fritas</p><span class="price" style="color:var(--amarillo)">9.49 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Papas Bacon</div><h4>PAPAS BACON</h4><p>300g de papas fritas con queso cheddar y tocineta</p><span class="price" style="color:var(--amarillo)">10.49 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Nachos</div><h4>NACHOS</h4><p>250g de chili con carne, tortillas, queso, crema agria, guacamole y picadillo</p><span class="price" style="color:var(--amarillo)">13.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Chicken Bowl</div><h4>CHICKEN BOWL</h4><p>500g de mix de pollo con media ración de alitas</p><span class="price" style="color:var(--amarillo)">9.49 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Mozzarella Sticks</div><h4>MOZZARELLA STICKS</h4><p>5 unidades</p><span class="price" style="color:var(--amarillo)">6.99 REF.</span></div>
+    </div>
+  </div>
+  <div class="menu-section" id="ensaladas">
+    <div class="menu-grid">
+      <div class="menu-card"><div class="menu-image-placeholder">Spare</div><h4>SPARE</h4><p>Pollo, lechuga, pasas, maíz, maní, nueces, jamón, parmesano</p><span class="price" style="color:var(--amarillo)">11.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">César con Pollo</div><h4>CÉSAR CON POLLO</h4><p>Pollo, lechuga, tocineta, crotones, parmesano</p><span class="price" style="color:var(--amarillo)">10.99 REF.</span></div>
+    </div>
+  </div>
+  <div class="menu-section" id="hamburguesas">
+    <div class="menu-grid">
+      <div class="menu-card"><div class="menu-image-placeholder">Dystopica</div><h4>DYSTOPICA</h4><p>Carne de res, quesos, tocineta, cebolla caramelizada. Incluye 150g de papas fritas.</p><span class="price" style="color:var(--amarillo)">11.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Crispy</div><h4>CRISPY</h4><p>Pollo crispy, queso cheddar, tocineta. Incluye 150g de papas fritas.</p><span class="price" style="color:var(--amarillo)">11.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Dystopica de Calle</div><h4>DYSTOPICA DE CALLE</h4><p>Jamón, quesos, repollo, lechuga. Incluye 150g de papas fritas.</p><span class="price" style="color:var(--amarillo)">11.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Cheese Burguer</div><h4>CHEESE BURGUER</h4><p>100g de carne, queso cheddar. Incluye 150g de papas fritas.</p><span class="price" style="color:var(--amarillo)">8.49 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Doble Cheese</div><h4>DOBLE CHEESE</h4><p>2 carnes (100g cada una) + 2 quesos cheddar. Incluye 150g de papas fritas.</p><span class="price" style="color:var(--amarillo)">10.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Extras</div><h4>EXTRAS</h4><p>Queso cheddar (1.59 REF.), tocineta (1.19 REF.), papas fritas (2.99 REF.), etc.</p></div>
+    </div>
+  </div>
+  <div class="menu-section" id="compartir">
+    <div class="menu-grid">
+      <div class="menu-card"><div class="menu-image-placeholder">Parrilla Pollo</div><h4>PARRILLA POLLO (2 personas)</h4><p>Incluye proteína, papas fritas, queso y ensalada.</p><span class="price" style="color:var(--amarillo)">22.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Parrilla Lomito</div><h4>PARRILLA LOMITO (2 personas)</h4><p>Incluye proteína, papas fritas, queso y ensalada.</p><span class="price" style="color:var(--amarillo)">24.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Parrilla Mixta</div><h4>PARRILLA MIXTA (2 personas)</h4><p>Incluye proteína, papas fritas, queso y ensalada.</p><span class="price" style="color:var(--amarillo)">22.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Fajitas Pollo</div><h4>FAJITAS POLLO (2 personas)</h4><p>Acompañadas de crema, guacamole, pico de gallo y queso.</p><span class="price" style="color:var(--amarillo)">22.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Fajitas Lomito</div><h4>FAJITAS LOMITO (2 personas)</h4><p>Acompañadas de crema, guacamole, pico de gallo y queso.</p><span class="price" style="color:var(--amarillo)">24.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Fajitas Mixta</div><h4>FAJITAS MIXTA (2 personas)</h4><p>Acompañadas de crema, guacamole, pico de gallo y queso.</p><span class="price" style="color:var(--amarillo)">24.49 REF.</span></div>
+    </div>
+  </div>
+  <div class="menu-section" id="pizzas">
+    <div class="menu-grid">
+      <div class="menu-card"><div class="menu-image-placeholder">Tradicional</div><h4>PIZZA TRADICIONAL</h4><p>Mediana 13". Ingredientes adicionales: 1-3 REF.</p><span class="price" style="color:var(--amarillo)">8.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Margarita</div><h4>PIZZA MARGARITA</h4><p>Especialidad</p><span class="price" style="color:var(--amarillo)">8.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Spare</div><h4>PIZZA SPARE</h4><p>Especialidad</p><span class="price" style="color:var(--amarillo)">12.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Strike Suprema</div><h4>PIZZA STRIKE SUPREMA</h4><p>Especialidad</p><span class="price" style="color:var(--amarillo)">12.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Combos</div><h4>COMBO PIZZA</h4><p>Pizza + ingrediente + bebida + tequeños</p><span class="price" style="color:var(--amarillo)">14.99-19.99 REF.</span></div>
+    </div>
+  </div>
+  <div class="menu-section" id="postres">
+    <div class="menu-grid">
+      <div class="menu-card"><div class="menu-image-placeholder">Torta de chocolate</div><h4>TORTA DE CHOCOLATE</h4><span class="price" style="color:var(--amarillo)">10.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Brownie con helado</div><h4>BROWNIE CON HELADO</h4><span class="price" style="color:var(--amarillo)">9.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Quesillo</div><h4>QUESILLO</h4><span class="price" style="color:var(--amarillo)">8.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Algodón de azúcar</div><h4>ALGODÓN DE AZÚCAR</h4><span class="price" style="color:var(--amarillo)">1.80 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Pizza dulce Piamonte</div><h4>PIZZAS DULCES: PIAMONTE</h4><p>Nutella y fresas</p><span class="price" style="color:var(--amarillo)">9.99 REF.</span></div>
+    </div>
+  </div>
+  <div class="menu-section" id="bebidas">
+    <div class="menu-grid">
+      <div class="menu-card"><div class="menu-image-placeholder">Té</div><h4>TÉ</h4><p>Variedad de tés</p><span class="price" style="color:var(--amarillo)">2.49 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Limonada</div><h4>LIMONADA</h4><p>Natural, fresa, hierbabuena, etc.</p><span class="price" style="color:var(--amarillo)">2.99-6.49 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Café</div><h4>CAFÉ</h4><p>Espresso, americano, etc.</p><span class="price" style="color:var(--amarillo)">2.49 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Refresco</div><h4>REFRESCO</h4><p>Variedad de marcas</p><span class="price" style="color:var(--amarillo)">1.80 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Moscow Mule</div><h4>MOSCOW MULE</h4><p>Cóctel clásico</p><span class="price" style="color:var(--amarillo)">5.49 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Cosmopolitan</div><h4>COSMOPOLITAN</h4><p>Cóctel clásico</p><span class="price" style="color:var(--amarillo)">5.49 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Mojito</div><h4>MOJITO</h4><p>Cóctel clásico</p><span class="price" style="color:var(--amarillo)">5.49 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Margarita</div><h4>MARGARITA</h4><p>Cóctel clásico</p><span class="price" style="color:var(--amarillo)">5.99-8.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Whisky</div><h4>WHISKY</h4><p>Trago individual</p><span class="price" style="color:var(--amarillo)">5.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Vodka</div><h4>VODKA</h4><p>Trago individual</p><span class="price" style="color:var(--amarillo)">5.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Cerveza Nacional</div><h4>CERVEZA NACIONAL</h4><p>Polar, Zulia, Regional, etc.</p><span class="price" style="color:var(--amarillo)">1.80 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Cerveza Importada</div><h4>CERVEZA IMPORTADA</h4><p>Corona, Heineken, Budweiser, etc.</p><span class="price" style="color:var(--amarillo)">2.49 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Cerveza Importada Especial</div><h4>CERVEZA IMPORTADA ESPECIAL</h4><p>Paulaner, Stella Artois, etc.</p><span class="price" style="color:var(--amarillo)">9.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Botella Whisky</div><h4>BOTELLA WHISKY</h4><p>Variedad de marcas</p><span class="price" style="color:var(--amarillo)">59.99-539.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Botella Ron</div><h4>BOTELLA RON</h4><p>Variedad de marcas</p><span class="price" style="color:var(--amarillo)">29.99-77.99 REF.</span></div>
+      <div class="menu-card"><div class="menu-image-placeholder">Botella Vino</div><h4>BOTELLA VINO</h4><p>Variedad de marcas</p><span class="price" style="color:var(--amarillo)">23.99-49.99 REF.</span></div>
+    </div>
+  </div>
+</section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="imagenes/logodystopia.png" alt="Logo DYSTOPIA" class="logo-dystopia">
+                    </div>
+                    <p>El lugar donde la tecnología, el diseño y la diversión se fusionan para crear experiencias únicas.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/dystopiabowling" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/dystopiabowling?igsh=MTZ4ZmdzN3hubnRlbw==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@dystopiabowling?_r=1&_d=ei1klf331a7c6l&sec_uid=MS4wLjABAAAA7qZsC2nlvZGF9CPDPxc1uHumtFY9BQFb8-jjWpTigoM58KVx6IK_iP_2_JrP_UC8&share_author_id=7236206695281951750&sharer_language=es&source=h5_m&u_code=dfe77jj6hl9jej&timestamp=1753399599&user_id=6894835555516335109&sec_user_id=MS4wLjABAAAAPRZcMN35rdvq0JVcZDh6xP94h40AqXlmvPcYxT8S5ocV_Gvslq23c9DWkC2WnW5i&item_author_type=2&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7530364852017170181&share_link_id=7f068958-80ee-4841-bea0-de41fb17d09e&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b6880%2Cb5836&social_share_type=5&enable_checksum=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://open.spotify.com/playlist/2ypjYbsIY3MpKSebichgS1?si=Lv1pzfHaTTOpFTY-atTqqw&pi=u-mIh4fYjaQLC_&nd=1&utm_medium=organic&product=open&%24full_url=https%3A%2F%2Fopen.spotify.com%2Fplaylist%2F2ypjYbsIY3MpKSebichgS1%3Fsi%3DLv1pzfHaTTOpFTY-atTqqw%26pi%3Du-mIh4fYjaQLC_&%24android_redirect_timeout=3000&feature=organic&_branch_match_id=1477081995103939774&_branch_referrer=H4sIAAAAAAAAA8WOy2rDMBREv0bexc%2BQRcGU0mJqmlBKvPHKXMuSrUSWbq6kBnfRb69d6DcUZjGcYeBM3qN7SBKH1iu5xIAYa2WuySOSHQL3pUVhIpbvZdC6C6TLabuw4onl1Zptjv%2Fe3M4rQg2LVs6vNV%2Fw0vaubosTvp1Fr%2Fg0njNWVE6x4uX4meGXfIWmeceqaXfgm9vtzvIDbmvYzfW0l%2B0FPo7P3a8CaN0Dv%2F6jxkrNsNJs8wEzkFVDR2JQJLjvvJqFDb4s0jSNpAAfSJSWRjCKR98kpCBSZux6sncnqKyN8zASzD8%2FbPvehwEAAA%3D%3D&fbclid=PAQ0xDSwLvqfhleHRuA2FlbQIxMAABpw0FpyciVHX257bfsPZySxq5lQ-KqbWds_hBapIJmn3m4e3Y7XEHXml1JfJ8_aem_HTA4EC0-Nwwf8okn2JBMjw" target="_blank"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 style="text-align:right; color:var(--amarillo);">Horarios</h4>
+                    <ul style="text-align:right; list-style:none; padding:0;">
+                        <li style="margin-bottom:0.3em;"><span style="color:var(--blanco);font-weight:600;">Lun. - Miér.:</span> <span style="color:var(--celeste);">4:00 pm a 12:00 am</span></li>
+                        <li style="margin-bottom:0.3em;"><span style="color:var(--blanco);font-weight:600;">Jue. - Vier.:</span> <span style="color:var(--celeste);">4:00 pm a 2:00 am</span></li>
+                        <li style="margin-bottom:0.3em;"><span style="color:var(--blanco);font-weight:600;">Sáb.:</span> <span style="color:var(--celeste);">12:00 pm a 2:00 am</span></li>
+                        <li><span style="color:var(--blanco);font-weight:600;">Dom.:</span> <span style="color:var(--celeste);">12:00 pm a 12:00 am</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DYSTOPIA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+    <script>
+  // Tabs menú interactivo
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      document.querySelectorAll('.menu-section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(this.getAttribute('data-tab')).classList.add('active');
+    });
+  });
+</script>
+</body>
+</html> 

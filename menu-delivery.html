@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Delivery - DYSTOPIA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="imagenes/logodystopia.png" alt="Logo DYSTOPIA" class="logo-dystopia">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn active">Menú <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="menu.html">Menú</a>
+                        <a href="menu-delivery.html" class="active">Menú Delivery</a>
+                    </div>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main style="padding-top:7rem;min-height:60vh;">
+        <div class="menu-tabs" style="display:flex;justify-content:center;gap:1.2rem;margin-bottom:2.5rem;flex-wrap:wrap;">
+            <button class="tab-btn active" data-tab="combos">Combos</button>
+            <button class="tab-btn" data-tab="especiales">Combos Especiales</button>
+            <button class="tab-btn" data-tab="postre">Postre / Merienda</button>
+            <button class="tab-btn" data-tab="bebidas">Bebidas To Go</button>
+            <button class="tab-btn" data-tab="extras">Extras</button>
+        </div>
+        <div class="menu-section active" id="combos">
+            <div class="menu-grid">
+                <div class="menu-card"><div class="menu-image-placeholder"><img src="imagenes/pizza-collage.jpg" alt="Strike Familiar"></div><h4>STRIKE FAMILIAR</h4><ul><li>3 Pizzas 13" (a elegir entre sabores populares como 1 vegetal, 1 embutido, 1 margarita)</li><li>1 Servicio de tequeños o empanaditas</li><li>1 Pepsi 1.5 L</li><li>1 Brownie (Susys cookies)</li></ul><span class="price" style="color:var(--amarillo);">REF 39.99</span><button class="add-to-cart" data-name="STRIKE FAMILIAR" data-price="39.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder"><img src="imagenes/hamburguesa.jpg" alt="Amigos en la Zona Gamer"></div><h4>AMIGOS EN LA ZONA GAMER</h4><ul><li>3 Hamburguesas (Dystopica, Crispy, Dystopica de calle, Doble Cheeseburger)</li><li>2 Servicios de tequeños o empanaditas</li><li>1 Pepsi 1.5 L</li></ul><span class="price" style="color:var(--amarillo);">REF 35.99</span><button class="add-to-cart" data-name="AMIGOS EN LA ZONA GAMER" data-price="35.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder"><img src="imagenes/alitas.jpg" alt="Dúo Dinámico"></div><h4>DÚO DINÁMICO</h4><ul><li>1 Pizza 13" (1 ingrediente)</li><li>1 Orden de alitas de pollo o Chicken Bowl</li><li>1 Pepsi 1.5 L</li></ul><span class="price" style="color:var(--amarillo);">REF 16.99</span><button class="add-to-cart" data-name="DÚO DINÁMICO" data-price="16.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder"><img src="imagenes/pizza.jpg" alt="Pizza Lover"></div><h4>PIZZA LOVER</h4><ul><li>1 Pizza 13" (1 ingrediente)</li><li>1 Bebida individual</li><li>1 Brownie</li></ul><span class="price" style="color:var(--amarillo);">REF 10.99</span><button class="add-to-cart" data-name="PIZZA LOVER" data-price="10.99">Agregar al carrito</button></div>
+            </div>
+        </div>
+        <div class="menu-section" id="especiales">
+            <div class="menu-grid">
+                <div class="menu-card"><div class="menu-image-placeholder"><img src="imagenes/mexican-nachos.jpg" alt="Fin de Semana de Película"></div><h4>FIN DE SEMANA DE PELÍCULA</h4><ul><li>2 Pizzas 13"</li><li>Nachos</li><li>1 Pepsi 1.5 L</li><li>2 Snacks a elegir (Doritos, Raquety)</li></ul><span class="price" style="color:var(--amarillo);">REF 24.99</span><button class="add-to-cart" data-name="FIN DE SEMANA DE PELÍCULA" data-price="24.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder"><img src="imagenes/tequeno.jpg" alt="Snacks para el Partido"></div><h4>SNACKS PARA EL PARTIDO</h4><ul><li>1 Servicio de tequeños</li><li>1 Servicio de empanaditas</li><li>1 Mozzarella Sticks</li><li>1 Orden de alitas o Chicken Bowl</li><li>Salsas para dipear</li><li>1 Pepsi 1.5 L</li></ul><span class="price" style="color:var(--amarillo);">REF 19.99</span><button class="add-to-cart" data-name="SNACKS PARA EL PARTIDO" data-price="19.99">Agregar al carrito</button></div>
+            </div>
+        </div>
+        <div class="menu-section" id="postre">
+            <div class="menu-grid">
+                <div class="menu-card"><div class="menu-image-placeholder"><img src="imagenes/dulce.jpg" alt="Dulce Final"></div><h4>DULCE FINAL</h4><ul><li>Brownies con helado</li><li>Galleticas mini Susys cookies</li><li>Pizza de Nutella</li></ul><span class="price" style="color:var(--amarillo);">REF 14.99</span><button class="add-to-cart" data-name="DULCE FINAL" data-price="14.99">Agregar al carrito</button></div>
+            </div>
+        </div>
+        <div class="menu-section" id="bebidas">
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-image-placeholder"><img src="imagenes/bebidas/Buchanans 12.jpg" alt="Buchanans 12"></div>
+                    <h4>Buchanans 12 (0.75 L)</h4>
+                    <span class="price" style="color:var(--amarillo);">REF 32.99</span>
+                    <button class="add-to-cart" data-name="Buchanans 12 (0.75 L)" data-price="32.99">Agregar al carrito</button>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-image-placeholder"><img src="imagenes/bebidas/Buchanans 18.jpg" alt="Buchanans 18"></div>
+                    <h4>Buchanans 18 (0.75 L)</h4>
+                    <span class="price" style="color:var(--amarillo);">REF 79.99</span>
+                    <button class="add-to-cart" data-name="Buchanans 18 (0.75 L)" data-price="79.99">Agregar al carrito</button>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-image-placeholder"><img src="imagenes/bebidas/Heineken.jpg" alt="Heineken"></div>
+                    <h4>Heineken</h4>
+                    <span class="price" style="color:var(--amarillo);">REF 2.49</span>
+                    <button class="add-to-cart" data-name="Heineken" data-price="2.49">Agregar al carrito</button>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-image-placeholder"><img src="imagenes/bebidas/Corona Extra.webp" alt="Corona Extra"></div>
+                    <h4>Corona Extra (355 mL)</h4>
+                    <span class="price" style="color:var(--amarillo);">REF 2.49</span>
+                    <button class="add-to-cart" data-name="Corona Extra (355 mL)" data-price="2.49">Agregar al carrito</button>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-image-placeholder"><img src="imagenes/bebidas/Stella.jpg" alt="Stella"></div>
+                    <h4>Stella (botella)</h4>
+                    <span class="price" style="color:var(--amarillo);">REF 2.49</span>
+                    <button class="add-to-cart" data-name="Stella (botella)" data-price="2.49">Agregar al carrito</button>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-image-placeholder"><img src="imagenes/bebidas/Smirnoff Ice Manzana.jpeg" alt="Smirnoff Ice Manzana"></div>
+                    <h4>Smirnoff Ice Manzana (lata)</h4>
+                    <span class="price" style="color:var(--amarillo);">REF 2.99</span>
+                    <button class="add-to-cart" data-name="Smirnoff Ice Manzana (lata)" data-price="2.99">Agregar al carrito</button>
+                </div>
+                <div class="menu-card"><div class="menu-image-placeholder"><img src="imagenes/bebidas/Johnnie Walker Etiqueta Negra.jpg " alt="Johnnie Walker Etiqueta Negra"></div><h4>Johnnie Walker Etiqueta Negra (0.75 L)</h4><span class="price" style="color:var(--amarillo);">REF 29.99</span><button class="add-to-cart" data-name="Johnnie Walker Etiqueta Negra (0.75 L)" data-price="29.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder"><img src="imagenes/bebidas/Johnnie Walker Etiqueta Dorada.webp " alt="Johnnie Walker Etiqueta Dorada"></div><h4>Johnnie Walker Etiqueta Dorada (0.75 L)</h4><span class="price" style="color:var(--amarillo);">REF 54.99</span><button class="add-to-cart" data-name="Johnnie Walker Etiqueta Dorada (0.75 L)" data-price="54.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder"><img src="imagenes/bebidas/Pampero Aniversario con funda.jpeg" alt="Pampero Aniversario con funda"></div><h4>Pampero Aniversario con funda (0.75 L)</h4><span class="price" style="color:var(--amarillo);">REF 29.99</span><button class="add-to-cart" data-name="Pampero Aniversario con funda (0.75 L)" data-price="29.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder"><img src="imagenes/bebidas/Pampero Selección 1938.webp" alt="Pampero Selección 1938"></div><h4>Pampero Selección 1938 (0.75 L)</h4><span class="price" style="color:var(--amarillo);">REF 17.99</span><button class="add-to-cart" data-name="Pampero Selección 1938 (0.75 L)" data-price="17.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder"><img src="imagenes/bebidas/Cacique Dorado.jpg" alt="Cacique Dorado"></div><h4>Cacique Dorado (0.75 L)</h4><span class="price" style="color:var(--amarillo);">REF 9.99</span><button class="add-to-cart" data-name="Cacique Dorado (0.75 L)" data-price="9.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder"><img src="imagenes/bebidas/500.jpg" alt="Cacique 500"></div><h4>Cacique 500 (0.75 L)</h4><span class="price" style="color:var(--amarillo);">REF 17.99</span><button class="add-to-cart" data-name="Cacique 500 (0.75 L)" data-price="17.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Cacique Leyenda</div><h4>Cacique Leyenda (0.75 L)</h4><span class="price" style="color:var(--amarillo);">REF 27.99</span><button class="add-to-cart" data-name="Cacique Leyenda (0.75 L)" data-price="27.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Santa Teresa Linaje Negro</div><h4>Santa Teresa Linaje Negro (0.75 L)</h4><span class="price" style="color:var(--amarillo);">REF 14.99</span><button class="add-to-cart" data-name="Santa Teresa Linaje Negro (0.75 L)" data-price="14.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Santa Teresa 1796</div><h4>Santa Teresa 1796 (0.75 L)</h4><span class="price" style="color:var(--amarillo);">REF 25.99</span><button class="add-to-cart" data-name="Santa Teresa 1796 (0.75 L)" data-price="25.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Vodka Grey Goose</div><h4>Vodka Grey Goose (750 mL)</h4><span class="price" style="color:var(--amarillo);">REF 45.99</span><button class="add-to-cart" data-name="Vodka Grey Goose (750 mL)" data-price="45.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Vodka Grey Goose</div><h4>Vodka Grey Goose (375 mL)</h4><span class="price" style="color:var(--amarillo);">REF 14.99</span><button class="add-to-cart" data-name="Vodka Grey Goose (375 mL)" data-price="14.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Vodka Absolut</div><h4>Vodka Absolut (1 L)</h4><span class="price" style="color:var(--amarillo);">REF 19.99</span><button class="add-to-cart" data-name="Vodka Absolut (1 L)" data-price="19.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Vodka Smirnoff</div><h4>Vodka Smirnoff (750 mL)</h4><span class="price" style="color:var(--amarillo);">REF 16.99</span><button class="add-to-cart" data-name="Vodka Smirnoff (750 mL)" data-price="16.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Ginebra Tanqueray</div><h4>Ginebra Tanqueray (0.75 L)</h4><span class="price" style="color:var(--amarillo);">REF 27.99</span><button class="add-to-cart" data-name="Ginebra Tanqueray (0.75 L)" data-price="27.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Ginebra Hendricks</div><h4>Ginebra Hendricks (1 L)</h4><span class="price" style="color:var(--amarillo);">REF 39.99</span><button class="add-to-cart" data-name="Ginebra Hendricks (1 L)" data-price="39.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Don Julio Blanco</div><h4>Don Julio Blanco (0.75 L)</h4><span class="price" style="color:var(--amarillo);">REF 64.99</span><button class="add-to-cart" data-name="Don Julio Blanco (0.75 L)" data-price="64.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Jimador Silver</div><h4>Jimador Silver (0.75 L)</h4><span class="price" style="color:var(--amarillo);">REF 21.99</span><button class="add-to-cart" data-name="Jimador Silver (0.75 L)" data-price="21.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Jimador Reposado</div><h4>Jimador Reposado (0.75 L)</h4><span class="price" style="color:var(--amarillo);">REF 21.99</span><button class="add-to-cart" data-name="Jimador Reposado (0.75 L)" data-price="21.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Don Julio Reposado</div><h4>Don Julio Reposado (0.75 L)</h4><span class="price" style="color:var(--amarillo);">REF 74.99</span><button class="add-to-cart" data-name="Don Julio Reposado (0.75 L)" data-price="74.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Freixenet Cordon Negro</div><h4>Freixenet Cordon Negro (750 mL)</h4><span class="price" style="color:var(--amarillo);">REF 17.99</span><button class="add-to-cart" data-name="Freixenet Cordon Negro (750 mL)" data-price="17.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Freixenet Cordon Rosado</div><h4>Freixenet Cordon Rosado (750 mL)</h4><span class="price" style="color:var(--amarillo);">REF 17.99</span><button class="add-to-cart" data-name="Freixenet Cordon Rosado (750 mL)" data-price="17.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Aperol</div><h4>Aperol (1 L)</h4><span class="price" style="color:var(--amarillo);">REF 22.99</span><button class="add-to-cart" data-name="Aperol (1 L)" data-price="22.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">JP Rosado</div><h4>JP Rosado (lata)</h4><span class="price" style="color:var(--amarillo);">REF 3.99</span><button class="add-to-cart" data-name="JP Rosado (lata)" data-price="3.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">JP Blanco</div><h4>JP Blanco (lata)</h4><span class="price" style="color:var(--amarillo);">REF 3.99</span><button class="add-to-cart" data-name="JP Blanco (lata)" data-price="3.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">JP Rosado</div><h4>JP Rosado (750 mL)</h4><span class="price" style="color:var(--amarillo);">REF 17.99</span><button class="add-to-cart" data-name="JP Rosado (750 mL)" data-price="17.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">JP Blanco</div><h4>JP Blanco (750 mL)</h4><span class="price" style="color:var(--amarillo);">REF 17.99</span><button class="add-to-cart" data-name="JP Blanco (750 mL)" data-price="17.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Vino Cabernet Sauvignon</div><h4>Vino Cabernet Sauvignon</h4><span class="price" style="color:var(--amarillo);">REF 9.99</span><button class="add-to-cart" data-name="Vino Cabernet Sauvignon" data-price="9.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Vino Chardonnay</div><h4>Vino Chardonnay</h4><span class="price" style="color:var(--amarillo);">REF 9.99</span><button class="add-to-cart" data-name="Vino Chardonnay" data-price="9.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Polar Pilsen</div><h4>Polar Pilsen (355 mL)</h4><span class="price" style="color:var(--amarillo);">REF 0.99</span><button class="add-to-cart" data-name="Polar Pilsen (355 mL)" data-price="0.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Solera Azul y Verde</div><h4>Solera Azul y Verde (250 mL)</h4><span class="price" style="color:var(--amarillo);">REF 0.99</span><button class="add-to-cart" data-name="Solera Azul y Verde (250 mL)" data-price="0.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Corona Extra</div><h4>Corona Extra (355 mL)</h4><span class="price" style="color:var(--amarillo);">REF 2.49</span><button class="add-to-cart" data-name="Corona Extra (355 mL)" data-price="2.49">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Stella</div><h4>Stella (botella)</h4><span class="price" style="color:var(--amarillo);">REF 2.49</span><button class="add-to-cart" data-name="Stella (botella)" data-price="2.49">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Heineken</div><h4>Heineken</h4><span class="price" style="color:var(--amarillo);">REF 2.49</span><button class="add-to-cart" data-name="Heineken" data-price="2.49">Agregar al carrito</button></div>
+            </div>
+        </div>
+        <div class="menu-section" id="extras">
+            <div class="menu-grid">
+                <div class="menu-card"><div class="menu-image-placeholder">Soda</div><h4>Soda</h4><span class="price" style="color:var(--amarillo);">REF 1.99</span><button class="add-to-cart" data-name="Soda" data-price="1.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Agua mineral</div><h4>Agua mineral Minalba (355 mL)</h4><span class="price" style="color:var(--amarillo);">REF 0.99</span><button class="add-to-cart" data-name="Agua mineral Minalba (355 mL)" data-price="0.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Agua sparkling</div><h4>Agua sparkling Minalba</h4><span class="price" style="color:var(--amarillo);">REF 1.49</span><button class="add-to-cart" data-name="Agua sparkling Minalba" data-price="1.49">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Monster</div><h4>Monster</h4><span class="price" style="color:var(--amarillo);">REF 2.99</span><button class="add-to-cart" data-name="Monster" data-price="2.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">90Minutos Hidratante</div><h4>90Minutos Hidratante</h4><span class="price" style="color:var(--amarillo);">REF 2.99</span><button class="add-to-cart" data-name="90Minutos Hidratante" data-price="2.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">90Minutos Sin Azúcar</div><h4>90Minutos Sin Azúcar</h4><span class="price" style="color:var(--amarillo);">REF 2.49</span><button class="add-to-cart" data-name="90Minutos Sin Azúcar" data-price="2.49">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Aguakina</div><h4>Aguakina</h4><span class="price" style="color:var(--amarillo);">REF 1.99</span><button class="add-to-cart" data-name="Aguakina" data-price="1.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Ginger Ale</div><h4>Ginger Ale</h4><span class="price" style="color:var(--amarillo);">REF 1.49</span><button class="add-to-cart" data-name="Ginger Ale" data-price="1.49">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Pepsi / 7UP / Frescolita</div><h4>Pepsi / 7UP / Frescolita (lata)</h4><span class="price" style="color:var(--amarillo);">REF 1.49</span><button class="add-to-cart" data-name="Pepsi / 7UP / Frescolita (lata)" data-price="1.49">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Pepsi / 7UP / Frescolita</div><h4>Pepsi / 7UP / Frescolita (1.5 L)</h4><span class="price" style="color:var(--amarillo);">REF 1.99</span><button class="add-to-cart" data-name="Pepsi / 7UP / Frescolita (1.5 L)" data-price="1.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Gatorade</div><h4>Gatorade</h4><span class="price" style="color:var(--amarillo);">REF 1.99</span><button class="add-to-cart" data-name="Gatorade" data-price="1.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Lucky Red</div><h4>Lucky Red</h4><span class="price" style="color:var(--amarillo);">REF 1.99</span><button class="add-to-cart" data-name="Lucky Red" data-price="1.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Lucky Nova Cosmic</div><h4>Lucky Nova Cosmic</h4><span class="price" style="color:var(--amarillo);">REF 1.99</span><button class="add-to-cart" data-name="Lucky Nova Cosmic" data-price="1.99">Agregar al carrito</button></div>
+                <div class="menu-card"><div class="menu-image-placeholder">Lucky Eclipse</div><h4>Lucky Eclipse</h4><span class="price" style="color:var(--amarillo);">REF 1.99</span><button class="add-to-cart" data-name="Lucky Eclipse" data-price="1.99">Agregar al carrito</button></div>
+            </div>
+            <hr style="border:1px solid var(--celeste);margin:2rem 0;">
+            <p style="color:var(--amarillo);font-size:1.05rem;text-align:center;">Precio incluye IVA.</p>
+        </div>
+    </main>
+    <!-- Carrito de compras (panel lateral) -->
+    <div id="cart-panel" class="cart-panel">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+            <h3 style="color:var(--amarillo);margin:0;">Tu pedido</h3>
+            <button id="close-cart" style="background:none;border:none;font-size:1.5rem;color:var(--blanco);cursor:pointer;">&times;</button>
+        </div>
+        <div id="cart-items" style="flex:1 1 auto;overflow-y:auto;max-height:55vh;"></div>
+        <div id="cart-total" style="color:var(--celeste);font-weight:600;font-size:1.1rem;margin-bottom:0.5rem;">Total: $0.00</div>
+        <button id="send-whatsapp" style="background:var(--amarillo);color:#181818;font-weight:700;padding:0.7em 1em;border:none;border-radius:5px;cursor:pointer;font-size:1.1rem;margin-top:1.2rem;"><i class='fab fa-whatsapp'></i> Realizar pedido por WhatsApp</button>
+    </div>
+    <button id="open-cart" style="position:fixed;bottom:2rem;right:2rem;z-index:9998;background:var(--amarillo);color:#181818;font-weight:700;padding:0.8em 1.2em;border:none;border-radius:50px;box-shadow:0 2px 8px rgba(0,0,0,0.15);font-size:1.2rem;cursor:pointer;">Ver carrito (<span id="cart-count">0</span>)</button>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="imagenes/logodystopia.png" alt="Logo DYSTOPIA" class="logo-dystopia">
+                    </div>
+                    <p>El lugar donde la tecnología, el diseño y la diversión se fusionan para crear experiencias únicas.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/dystopiabowling" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/dystopiabowling?igsh=MTZ4ZmdzN3hubnRlbw==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@dystopiabowling?_r=1&_d=ei1klf331a7c6l&sec_uid=MS4wLjABAAAA7qZsC2nlvZGF9CPDPxc1uHumtFY9BQFb8-jjWpTigoM58KVx6IK_iP_2_JrP_UC8&share_author_id=7236206695281951750&sharer_language=es&source=h5_m&u_code=dfe77jj6hl9jej&timestamp=1753399599&user_id=6894835555516335109&sec_user_id=MS4wLjABAAAAPRZcMN35rdvq0JVcZDh6xP94h40AqXlmvPcYxT8S5ocV_Gvslq23c9DWkC2WnW5i&item_author_type=2&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7530364852017170181&share_link_id=7f068958-80ee-4841-bea0-de41fb17d09e&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b6880%2Cb5836&social_share_type=5&enable_checksum=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://open.spotify.com/playlist/2ypjYbsIY3MpKSebichgS1?si=Lv1pzfHaTTOpFTY-atTqqw&pi=u-mIh4fYjaQLC_&nd=1&utm_medium=organic&product=open&%24full_url=https%3A%2F%2Fopen.spotify.com%2Fplaylist%2F2ypjYbsIY3MpKSebichgS1%3Fsi%3DLv1pzfHaTTOpFTY-atTqqw%26pi%3Du-mIh4fYjaQLC_&%24android_redirect_timeout=3000&feature=organic&_branch_match_id=1477081995103939774&_branch_referrer=H4sIAAAAAAAAA8WOy2rDMBREv0bexc%2BQRcGU0mJqmlBKvPHKXMuSrUSWbq6kBnfRb69d6DcUZjGcYeBM3qN7SBKH1iu5xIAYa2WuySOSHQL3pUVhIpbvZdC6C6TLabuw4onl1Zptjv%2Fe3M4rQg2LVs6vNV%2Fw0vaubosTvp1Fr%2Fg0njNWVE6x4uX4meGXfIWmeceqaXfgm9vtzvIDbmvYzfW0l%2B0FPo7P3a8CaN0Dv%2F6jxkrNsNJs8wEzkFVDR2JQJLjvvJqFDb4s0jSNpAAfSJSWRjCKR98kpCBSZux6sncnqKyN8zASzD8%2FbPvehwEAAA%3D%3D&fbclid=PAQ0xDSwLvqfhleHRuA2FlbQIxMAABpw0FpyciVHX257bfsPZySxq5lQ-KqbWds_hBapIJmn3m4e3Y7XEHXml1JfJ8_aem_HTA4EC0-Nwwf8okn2JBMjw" target="_blank"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 style="text-align:right; color:var(--amarillo);">Horarios</h4>
+                    <ul style="text-align:right; list-style:none; padding:0;">
+                        <li style="margin-bottom:0.3em;"><span style="color:var(--blanco);font-weight:600;">Lun. - Miér.:</span> <span style="color:var(--celeste);">4:00 pm a 12:00 am</span></li>
+                        <li style="margin-bottom:0.3em;"><span style="color:var(--blanco);font-weight:600;">Jue. - Vier.:</span> <span style="color:var(--celeste);">4:00 pm a 2:00 am</span></li>
+                        <li style="margin-bottom:0.3em;"><span style="color:var(--blanco);font-weight:600;">Sáb.:</span> <span style="color:var(--celeste);">12:00 pm a 2:00 am</span></li>
+                        <li><span style="color:var(--blanco);font-weight:600;">Dom.:</span> <span style="color:var(--celeste);">12:00 pm a 12:00 am</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DYSTOPIA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Menú móvil
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Tabs menú interactivo
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                document.querySelectorAll('.menu-section').forEach(sec => sec.classList.remove('active'));
+                document.getElementById(this.getAttribute('data-tab')).classList.add('active');
+            });
+        });
+
+        // Carrito de compras
+        let cart = [];
+        const cartPanel = document.getElementById('cart-panel');
+        const openCartBtn = document.getElementById('open-cart');
+        const closeCartBtn = document.getElementById('close-cart');
+        const cartItemsDiv = document.getElementById('cart-items');
+        const cartTotalDiv = document.getElementById('cart-total');
+        const cartCountSpan = document.getElementById('cart-count');
+        const sendWhatsappBtn = document.getElementById('send-whatsapp');
+
+        function updateCartDisplay() {
+            cartItemsDiv.innerHTML = '';
+            let total = 0;
+            cart.forEach((item, idx) => {
+                total += item.price * item.qty;
+                const itemDiv = document.createElement('div');
+                itemDiv.style.display = 'flex';
+                itemDiv.style.justifyContent = 'space-between';
+                itemDiv.style.alignItems = 'center';
+                itemDiv.style.marginBottom = '0.7em';
+                itemDiv.innerHTML = `<span style='color:var(--blanco);'>${item.name} <b>x${item.qty}</b></span><span style='color:var(--celeste);'>$${(item.price*item.qty).toFixed(2)}</span><button style='margin-left:0.5em;background:none;border:none;color:var(--amarillo);font-size:1.1em;cursor:pointer;' data-idx='${idx}' class='remove-item' title='Quitar'>&#128465;</button>`;
+                cartItemsDiv.appendChild(itemDiv);
+            });
+            cartTotalDiv.textContent = `Total: $${total.toFixed(2)}`;
+            // Actualiza el número del carrito correctamente
+            if (document.getElementById('cart-count')) {
+                document.getElementById('cart-count').textContent = cart.reduce((acc, item) => acc + item.qty, 0);
+            }
+        }
+
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const name = this.getAttribute('data-name');
+                const price = parseFloat(this.getAttribute('data-price'));
+                const found = cart.find(item => item.name === name);
+                if (found) {
+                    found.qty += 1;
+                } else {
+                    cart.push({ name, price, qty: 1 });
+                }
+                updateCartDisplay();
+            });
+        });
+
+        openCartBtn.addEventListener('click', () => {
+            cartPanel.style.right = '0';
+        });
+        closeCartBtn.addEventListener('click', () => {
+            cartPanel.style.right = '-400px';
+        });
+        cartPanel.addEventListener('click', function(e) {
+            if (e.target.classList.contains('remove-item')) {
+                const idx = parseInt(e.target.getAttribute('data-idx'));
+                cart.splice(idx, 1);
+                updateCartDisplay();
+            }
+        });
+        sendWhatsappBtn.addEventListener('click', () => {
+            if (cart.length === 0) return alert('El carrito está vacío.');
+            let msg = '¡Hola! Quiero pedir lo siguiente en DYSTOPIA:%0A';
+            cart.forEach(item => {
+                msg += `- ${item.name} x${item.qty} ($${(item.price*item.qty).toFixed(2)})%0A`;
+            });
+            let total = cart.reduce((acc, item) => acc + item.price * item.qty, 0);
+            msg += `Total: $${total.toFixed(2)}`;
+            window.open(`https://wa.me/584246201766?text=${msg}`, '_blank');
+        });
+        // Inicializar carrito
+        updateCartDisplay();
+        // Cambiar el botón flotante a ícono de carrito
+        openCartBtn.innerHTML = `<i class="fa fa-shopping-cart"></i><span id="cart-count" style="position:absolute;top:10px;right:10px;background:var(--celeste);color:#181818;font-size:1rem;font-weight:700;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,0.12);">0</span>`;
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.innerHTML = `<i class='fa fa-cart-plus'></i> Agregar al carrito`;
+        });
+    </script>
+</body>
+</html> 

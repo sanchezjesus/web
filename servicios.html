@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - DYSTOPIA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="imagenes/logodystopia.png" alt="Logo DYSTOPIA" class="logo-dystopia">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html" class="active">Servicios</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menú <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="menu.html">Menú</a>
+                        <a href="menu-delivery.html">Menú Delivery</a>
+                    </div>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section class="services">
+        <div class="container">
+            <!-- Hero Section -->
+            <div class="services-hero">
+                <h1>Paquetes y Servicios</h1>
+                <p>Celebra tus momentos especiales con nuestros paquetes exclusivos y servicios premium</p>
+            </div>
+            
+            <!-- Paquetes de Cumpleaños -->
+            <div class="package-section">
+                <h3>Paquetes de Cumpleaños</h3>
+                
+                <!-- Paquete Gold - Lunes a Miércoles -->
+                <div class="package-card gold-package">
+                    <div class="package-header">
+                        <h3>PAQUETE GOLD</h3>
+                        <span class="package-days">LUNES A MIÉRCOLES</span>
+                        <div class="package-price">$999</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-details">
+                            <div class="detail-column">
+                                <ul>
+                                    <li>3 Canchas VIP por 4 horas</li>
+                                    <li>150 Tequeños</li>
+                                    <li>60 Empanadas</li>
+                                    <li>25 Aguas Mineral</li>
+                                    <li>100 Refrescos 7oz</li>
+                                    <li>1 Botella de WHISKY 12 AÑOS</li>
+                                </ul>
+                            </div>
+                            <div class="detail-column">
+                                <ul>
+                                    <li>1 Hora en las dos estaciones de la Zona Gamer</li>
+                                    <li>1 Hora de pool en cada mesa</li>
+                                    <li>1 Premio para el cumpleañero</li>
+                                    <li>20 (Cotufas, algodón de azúcar o barquillas)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="btn-reservar" onclick="reservarPaquete('PAQUETE GOLD', 'LUNES A MIÉRCOLES', '$999', 'Máximo 6 personas')">
+                            <i class="fas fa-calendar-plus"></i> Reservar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Paquete Silver - Lunes a Miércoles -->
+                <div class="package-card silver-package">
+                    <div class="package-header">
+                        <h3>PAQUETE SILVER</h3>
+                        <span class="package-days">LUNES A MIÉRCOLES</span>
+                        <div class="package-price">$699</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-details">
+                            <div class="detail-column">
+                                <ul>
+                                    <li>3 Canchas VIP por 3 horas</li>
+                                    <li>100 Tequeños</li>
+                                    <li>60 Empanadas</li>
+                                    <li>20 Aguas Mineral</li>
+                                    <li>60 Refrescos 7oz</li>
+                                </ul>
+                            </div>
+                            <div class="detail-column">
+                                <ul>
+                                    <li>20 (Cotufas, algodón de azúcar o barquillas)</li>
+                                    <li>1 Hora en las dos estaciones de la Zona Gamer</li>
+                                    <li>1 Premio para el cumpleañero</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="btn-reservar" onclick="reservarPaquete('PAQUETE SILVER', 'LUNES A MIÉRCOLES', '$699', 'Máximo 6 personas')">
+                            <i class="fas fa-calendar-plus"></i> Reservar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Paquete Bronce - Lunes a Miércoles -->
+                <div class="package-card bronze-package">
+                    <div class="package-header">
+                        <h3>PAQUETE BRONCE</h3>
+                        <span class="package-days">LUNES A MIÉRCOLES</span>
+                        <div class="package-price">$399</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-details">
+                            <div class="detail-column">
+                                <ul>
+                                    <li>3 Canchas VIP por 2 horas</li>
+                                    <li>100 Tequeños</li>
+                                    <li>30 Empanadas</li>
+                                    <li>10 Aguas Mineral</li>
+                                    <li>40 Refrescos 7oz</li>
+                                </ul>
+                            </div>
+                            <div class="detail-column">
+                                <ul>
+                                    <li>Se permite traer la torta y una pequeña decoración</li>
+                                    <li>1 Hora en las dos estaciones de la Zona Gamer</li>
+                                    <li>1 Premio para el cumpleañero</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="btn-reservar" onclick="reservarPaquete('PAQUETE BRONCE', 'LUNES A MIÉRCOLES', '$399', 'Máximo 6 personas')">
+                            <i class="fas fa-calendar-plus"></i> Reservar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Separador Visual -->
+                <div class="package-separator">
+                    <div class="separator-line"></div>
+                    <div class="separator-icon">🎊</div>
+                    <div class="separator-line"></div>
+                </div>
+
+                <!-- Paquetes Jueves a Domingo -->
+                <h3 style="color: var(--celeste); text-align: center; margin: 3rem 0 2rem 0; font-size: 2.5rem; font-weight: 800;">Paquetes Jueves a Domingo</h3>
+
+                <!-- Paquete Gold - Jueves a Domingo -->
+                <div class="package-card gold-package">
+                    <div class="package-header">
+                        <h3>PAQUETE GOLD</h3>
+                        <span class="package-days">JUEVES A DOMINGO</span>
+                        <div class="package-price">$1599</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-details">
+                            <div class="detail-column">
+                                <ul>
+                                    <li>3 Canchas VIP por 4 horas c/u</li>
+                                    <li>100 Tequeños</li>
+                                    <li>90 Empanadas</li>
+                                    <li>30 Aguas Mineral</li>
+                                    <li>200 Refrescos 7oz</li>
+                                    <li>2 Botellas de WHISKY 12 AÑOS</li>
+                                </ul>
+                            </div>
+                            <div class="detail-column">
+                                <ul>
+                                    <li>10 Parrillas mixtas para 2 personas</li>
+                                    <li>30 Té frío 16oz</li>
+                                    <li>36 Cervezas Pilsen</li>
+                                    <li>30 (Cotufas, algodón de azúcar o barquillas)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="btn-reservar" onclick="reservarPaquete('PAQUETE GOLD', 'JUEVES A DOMINGO', '$1599', 'Máximo 6 personas')">
+                            <i class="fas fa-calendar-plus"></i> Reservar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Paquete Silver - Jueves a Domingo -->
+                <div class="package-card silver-package">
+                    <div class="package-header">
+                        <h3>PAQUETE SILVER</h3>
+                        <span class="package-days">JUEVES A DOMINGO</span>
+                        <div class="package-price">$999</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-details">
+                            <div class="detail-column">
+                                <ul>
+                                    <li>3 Canchas VIP por 3 horas c/u</li>
+                                    <li>150 Tequeños</li>
+                                    <li>90 Empanadas</li>
+                                    <li>20 Aguas Mineral</li>
+                                    <li>100 Refrescos 7oz</li>
+                                </ul>
+                            </div>
+                            <div class="detail-column">
+                                <ul>
+                                    <li>30 (Cotufas, algodón de azúcar o barquillas)</li>
+                                    <li>25 Té frío 16oz</li>
+                                    <li>36 Cervezas Polar Pilsen</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="btn-reservar" onclick="reservarPaquete('PAQUETE SILVER', 'JUEVES A DOMINGO', '$999', 'Máximo 6 personas')">
+                            <i class="fas fa-calendar-plus"></i> Reservar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Paquete Bronce - Jueves a Domingo -->
+                <div class="package-card bronze-package">
+                    <div class="package-header">
+                        <h3>PAQUETE BRONCE</h3>
+                        <span class="package-days">JUEVES A DOMINGO</span>
+                        <div class="package-price">$650</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-details">
+                            <div class="detail-column">
+                                <ul>
+                                    <li>3 Canchas VIP por 2 horas c/u</li>
+                                    <li>100 Tequeños</li>
+                                    <li>60 Empanadas</li>
+                                    <li>20 Aguas Mineral</li>
+                                </ul>
+                            </div>
+                            <div class="detail-column">
+                                <ul>
+                                    <li>20 (Cotufas, algodón de azúcar o barquillas)</li>
+                                    <li>100 Refrescos 7oz</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="btn-reservar" onclick="reservarPaquete('PAQUETE BRONCE', 'JUEVES A DOMINGO', '$650', 'Máximo 6 personas')">
+                            <i class="fas fa-calendar-plus"></i> Reservar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pista de Bowling Normal -->
+            <div class="bowling-section">
+                <h3>Pista de Bowling Normal</h3>
+                <div class="bowling-card">
+                    <div class="bowling-header">
+                        <h3>Pista de Bowling</h3>
+                        <div class="bowling-price">$40/hora</div>
+                    </div>
+                    <div class="bowling-content">
+                        <p><strong>Máximo 6 personas por pista</strong></p>
+                        <p>Disfruta de nuestras pistas de bowling con tecnología de última generación, luces y sonido envolvente.</p>
+                        <button class="btn-reservar" onclick="reservarBowling()">
+                            <i class="fas fa-calendar-plus"></i> Reservar Pista
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="imagenes/logodystopia.png" alt="Logo DYSTOPIA" class="logo-dystopia">
+                    </div>
+                    <p>El lugar donde la tecnología, el diseño y la diversión se fusionan para crear experiencias únicas.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/dystopiabowling" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/dystopiabowling?igsh=MTZ4ZmdzN3hubnRlbw==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@dystopiabowling?_r=1&_d=ei1klf331a7c6l&sec_uid=MS4wLjABAAAA7qZsC2nlvZGF9CPDPxc1uHumtFY9BQFb8-jjWpTigoM58KVx6IK_iP_2_JrP_UC8&share_author_id=7236206695281951750&sharer_language=es&source=h5_m&u_code=dfe77jj6hl9jej&timestamp=1753399599&user_id=6894835555516335109&sec_user_id=MS4wLjABAAAAPRZcMN35rdvq0JVcZDh6xP94h40AqXlmvPcYxT8S5ocV_Gvslq23c9DWkC2WnW5i&item_author_type=2&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7530364852017170181&share_link_id=7f068958-80ee-4841-bea0-de41fb17d09e&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b6880%2Cb5836&social_share_type=5&enable_checksum=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://open.spotify.com/playlist/2ypjYbsIY3MpKSebichgS1?si=Lv1pzfHaTTOpFTY-atTqqw&pi=u-mIh4fYjaQLC_&nd=1&utm_medium=organic&product=open&%24full_url=https%3A%2F%2Fopen.spotify.com%2Fplaylist%2F2ypjYbsIY3MpKSebichgS1%3Fsi%3DLv1pzfHaTTOpFTY-atTqqw%26pi%3Du-mIh4fYjaQLC_&%24android_redirect_timeout=3000&feature=organic&_branch_match_id=1477081995103939774&_branch_referrer=H4sIAAAAAAAAA8WOy2rDMBREv0bexc%2BQRcGU0mJqmlBKvPHKXMuSrUSWbq6kBnfRb69d6DcUZjGcYeBM3qN7SBKH1iu5xIAYa2WuySOSHQL3pUVhIpbvZdC6C6TLabuw4onl1Zptjv%2Fe3M4rQg2LVs6vNV%2Fw0vaubosTvp1Fr%2Fg0njNWVE6x4uX4meGXfIWmeceqaXfgm9vtzvIDbmvYzfW0l%2B0FPo7P3a8CaN0Dv%2F6jxkrNsNJs8wEzkFVDR2JQJLjvvJqFDb4s0jSNpAAfSJSWRjCKR98kpCBSZux6sncnqKyN8zASzD8%2FbPvehwEAAA%3D%3D&fbclid=PAQ0xDSwLvqfhleHRuA2FlbQIxMAABpw0FpyciVHX257bfsPZySxq5lQ-KqbWds_hBapIJmn3m4e3Y7XEHXml1JfJ8_aem_HTA4EC0-Nwwf8okn2JBMjw" target="_blank"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 style="text-align:right; color:var(--amarillo);">Horarios</h4>
+                    <ul style="text-align:right; list-style:none; padding:0;">
+                        <li style="margin-bottom:0.3em;"><span style="color:var(--blanco);font-weight:600;">Lun. - Miér.:</span> <span style="color:var(--celeste);">4:00 pm a 12:00 am</span></li>
+                        <li style="margin-bottom:0.3em;"><span style="color:var(--blanco);font-weight:600;">Jue. - Vier.:</span> <span style="color:var(--celeste);">4:00 pm a 2:00 am</span></li>
+                        <li style="margin-bottom:0.3em;"><span style="color:var(--blanco);font-weight:600;">Sáb.:</span> <span style="color:var(--celeste);">12:00 pm a 2:00 am</span></li>
+                        <li><span style="color:var(--blanco);font-weight:600;">Dom.:</span> <span style="color:var(--celeste);">12:00 pm a 12:00 am</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DYSTOPIA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        function reservarPaquete(nombre, dias, precio, capacidad) {
+            const mensaje = `🎉 *RESERVA PAQUETE DYSTOPIA* 🎉\n\n` +
+                           `*Paquete:* ${nombre}\n` +
+                           `*Días:* ${dias}\n` +
+                           `*Precio:* ${precio}\n` +
+                           `*Capacidad:* ${capacidad}\n\n` +
+                           `Hola! Me gustaría reservar este paquete para celebrar un cumpleaños.\n\n` +
+                           `📞 *Solicitud desde la web*`;
+            
+            const mensajeCodificado = encodeURIComponent(mensaje);
+            const whatsappUrl = `https://wa.me/584246201766?text=${mensajeCodificado}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function reservarBowling() {
+            const mensaje = `🎳 *RESERVA PISTA DE BOWLING* 🎳\n\n` +
+                           `*Servicio:* Pista de Bowling\n` +
+                           `*Precio:* $40/hora\n` +
+                           `*Capacidad:* Máximo 6 personas por pista\n\n` +
+                           `Hola! Me gustaría reservar una pista de bowling.\n\n` +
+                           `📞 *Solicitud desde la web*`;
+            
+            const mensajeCodificado = encodeURIComponent(mensaje);
+            const whatsappUrl = `https://wa.me/584246201766?text=${mensajeCodificado}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html> 
